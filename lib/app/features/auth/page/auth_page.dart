@@ -1,3 +1,4 @@
+import 'package:chirrup/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class AuthPage extends StatefulWidget {
@@ -8,8 +9,11 @@ class AuthPage extends StatefulWidget {
 }
 
 class _AuthPageState extends State<AuthPage> {
+  final appBar = UIConstants.appBar();
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: appBar,
+    );
   }
 }
